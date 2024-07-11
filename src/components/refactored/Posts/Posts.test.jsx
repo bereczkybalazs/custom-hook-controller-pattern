@@ -5,8 +5,8 @@ import '@testing-library/jest-dom/extend-expect';
 import { POST_TESTID, Posts } from './Posts';
 
 const mockPosts = jest.fn()
-jest.mock('./usePosts', () => ({
-  ...jest.requireActual('./usePosts'),
+jest.mock('./hooks/usePosts', () => ({
+  ...jest.requireActual('./hooks/usePosts'),
   usePosts: () => ({ posts: mockPosts() }),
 }));
 

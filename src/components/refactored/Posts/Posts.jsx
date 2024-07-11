@@ -1,4 +1,4 @@
-import { usePosts } from './usePosts';
+import { usePosts } from './hooks/usePosts';
 
 export const POST_TESTID = 'POST_TESTID'
 export const Posts = () => {
