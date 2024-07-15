@@ -2,7 +2,6 @@ import { renderHook, waitFor } from '@testing-library/react'
 import { usePosts } from './usePosts'
 
 const mockFetch = jest.fn()
-// Mock fetch
 global.fetch = mockFetch
 
 
